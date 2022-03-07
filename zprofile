@@ -1,6 +1,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="/opt/homebrew/opt/postgresql@12/bin:$PATH"
 export PATH="/opt/homebrew/opt/python@3.9/libexec/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
 export PATH="${HOME}/bin:$PATH"
 
 # colors
@@ -32,4 +33,3 @@ alias ba="cd /var/www/ba"
 alias ds="cd /var/www/ba; npm run dev-server"
 alias wa="cd /var/www/ba; npm run watch"
 alias wa11="cd /var/www/ba; npm run watch-11"
-

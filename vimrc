@@ -79,18 +79,5 @@ set expandtab
 nnoremap <C-L> :nohl<CR><C-L>
 
 
-" PLUGINS
-
-call plug#begin('~/.vim/plugged')
-
-" orgmode support
-Plug 'jceb/vim-orgmode'
-Plug 'tpope/vim-speeddating'
-
-call plug#end()
-
-
-"PLUGIN SETTINGS
-
 " open all folds to make org files more readable
 set foldlevel=99
