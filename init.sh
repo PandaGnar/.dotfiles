@@ -18,6 +18,7 @@ read
 # link all files in "${FILES}"
 for file in $FILES
 do
+    echo $file
     if [ ! -e ~/."${file}" ]
     then
         echo "linking ${file} as ~/.${file}"
