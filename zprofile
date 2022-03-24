@@ -37,6 +37,10 @@ alias grh="git reset HEAD"
 alias grhh="git reset --hard HEAD"
 alias gm="git merge"
 
+# Knex
+alias kml="knex migrate:latest"
+alias kmr="knex migrate:rollback"
+
 # workflow
 alias plan="mkdir -p ~/Workspace/Mise; code ~/Workspace/Mise"
 
@@ -55,3 +59,6 @@ alias bac="code /var/www/ba"
 alias ds="cd /var/www/ba; npm run dev-server"
 alias wa="cd /var/www/ba; npm run watch"
 alias wa11="cd /var/www/ba; npm run watch-11"
+
+# autoload file
+autoload -Uz compinit && compinit
