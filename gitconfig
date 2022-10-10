@@ -19,3 +19,5 @@
     files = ls-tree -r master --name-only
 [pull]
 	rebase = false
+[push]
+	autoSetupRemote = true
