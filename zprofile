@@ -57,21 +57,41 @@ alias notes="mkdir -p ~/Workspace/Mise; code ~/Workspace/Notes"
 
 # testservers
 alias kraken="testserver krakentest.com krakentest-preview"
-# alias fiona="testserver fionatest.com"
-alias rote="testserver rotetest.com"
-# alias grogg="testserver groggtest.com engines-wip"
-alias lizzie="testserver lizzietest.com"
+alias fiona="testserver fionatest.com"
+# alias rote="testserver rotetest.com"
+alias grogg="testserver groggtest.com engines-wip"
+# alias lizzie="testserver lizzietest.com"
 
 # production
 alias ba="cd /var/www/ba"
 alias at="cd /var/www/ba/submodules/all-ten"
+alias tb="cd ~/Workspace/vcvc-prototype-2"
 
 alias bac="code /var/www/ba"
 alias atc="code /var/www/ba/submodules/all-ten"
-alias ds="cd /var/www/ba; npm run dev-server"
-alias wa="cd /var/www/ba; npm run watch"
-alias wa11="cd /var/www/ba; npm run watch-11"
-alias li10="rm /var/www/balocal/public/cms/AllTen/bundle_allten.js; cp /var/www/ba/submodules/all-ten/public/dist/bundle_allten.js /var/www/balocal/public/cms/AllTen/bundle_allten.js"
+alias tbc="code ~/Workspace/vcvc-prototype-2"
 
 # autoload file
 autoload -Uz compinit && compinit
+
+# VCVC
+alias vcvc='code ~/Workspace/AoPS/vcvc'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+alias vcvcts='ssh -i "~/.ssh/JeffLaptop.pem" ubuntu@ec2-44-204-155-245.compute-1.amazonaws.com'
+
+# stop puppeteer from being annoying on Mac
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export PUPPETEER_EXECUTABLE_PATH=`which chromium`
+
+alias pya='ssh website@py-analytics.aops.com -p2345'
+alias vcvc-acc='code /Users/jeffersonchen/Workspace/AoPS/amazon-chime-sdk/apps/amplify-demo'
+source "$TROVE_BIN_DIR/profiles/Trove.zprofile"
+
+alias f='tmux attach -t torch-frontend'
+alias b='tmux attach -t torch-backend'
+
