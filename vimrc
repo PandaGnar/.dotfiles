@@ -67,7 +67,7 @@ set t_vb=
 
 " INDENTATION
 
-" identation using 4 spaces instead of tabs
+" identation using 2 spaces instead of tabs
 set shiftwidth=2
 set softtabstop=2
 set expandtab
