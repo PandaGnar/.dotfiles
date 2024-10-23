@@ -23,8 +23,15 @@ alias relocate="sudo /usr/libexec/locate.updatedb"
 
 # ZSH Scripting
 alias reinit="touch $HOME/.zprofile; . $HOME/.zprofile; touch $HOME/.zshrc; . $HOME/.zshrc"
+alias reconf="vim ~/.zprofile"
+alias adjust="vim ~/.zprofile"
+alias updot="cd ~/.dotfiles;gac;gpu"
+
+# prettier
+alias pa="npm run pretty-all"
 
 # Git
+alias gf="git fetch"
 alias ga="git add -A"
 alias gb="git branch"
 alias gc="git commit"
@@ -101,11 +108,10 @@ alias rdkr='docker-compose down -v; docker-compose up -d'
 alias rdkrds='docker-compose down -v; docker-compose up -d; npm run dev-server'
 alias pya='ssh website@py-analytics.aops.com -p2345'
 alias vcvc-acc='code /Users/jeffersonchen/Workspace/AoPS/amazon-chime-sdk/apps/amplify-demo'
-# source "$TROVE_BIN_DIR/profiles/Trove.zprofile"
 
 alias f='tmux attach -t torch-frontend'
 alias b='tmux attach -t torch-backend'
 
 # set Java version
-export JAVA_HOME=`/usr/libexec/java_home -v 21.0.2`
+# export JAVA_HOME=`/usr/libexec/java_home -v 21.0.2`
 alias exportTorch='rm *.tgz; npm run build && npm pack; rm ~/Workspace/torchboard/client/*.tgz; mv *.tgz ~/Workspace/torchboard/client'
